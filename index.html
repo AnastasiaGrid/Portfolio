@@ -6,33 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <meta name="keywords" content="портфолио, работа, HTML">
-    <meta name="discription" content="Сайт-портфолио молодого front-end разработчика"
+    <meta name="discription" content="Сайт-портфолио молодого front-end разработчика">
+    <link rel="stylesheet" href="portfolio.css">     
 </head>
 <body>
-    <img src="Аватарка.jpg" alt="Аватарка" width="200">
-    <h1>Анастасия Гриднева</h1>
-    <p>Я  инженер-эколог, который хочет стать <strong> программистом. </strong> </p>
-    <p>
-    В настоящее время прохожу различные курсы по изучению языков HTML и CSS обучение. 
-    <br> 
-    <p>  <strong> Ищите меня в этих соцсетях: </strong><br>
-    <a href="https://vk.com/aagridneva"> VK </a> <br>
-     <a href="https://www.instagram.com/anastasia._.gridneva/">Instagram</a>
-    </p>
+
+<div class="container">
+<div class="info">
+    <img src="Аватарка.jpg" alt="Аватарка" width="200" height="200"> 
+
+<div class="info-text">
+        <h1>Анастасия Гриднева</h1>
+            <p>Я  инженер-эколог, который хочет стать <strong> программистом. </strong> 
+            В настоящее время прохожу различные курсы по изучению языков HTML и CSS обучение. </p>
+      
+    <div class="socialmedia">
+    <h4>Ищите меня в этих соцсетях:</h4>  
+        <ul>
+        <li><a href="https://vk.com/aagridneva" target="_blank"> VK </a> </li>
+        <li><a href="https://www.instagram.com/anastasia._.gridneva/" target="_blank">Instagram</a> </li>
+        </ul>
+     </div>
+
+</div>
+</div>
+
+
+    
+<div class="card-hobbi">
+    <h3>Мои хобби:</h3>
    <ul>
        <li>Чтение;</li>
        <li>Рисование;</li>
        <li>Программирование.</li>
    </ul>
-    <table>
-        <thead>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Когда</th>
-        </thead>
+</div>
+
+<div class="card-work">
+   <h3>Опыт работы:</h3>
+ 
+      <table >
+      
         <tbody>
             <tr>
-            <td>ООО "ПТБ Волгоградгражданстрой"</td>
+            <td>ООО "ПТБ"</td>
             <td>Эколог</td>
             <td>2017-2019</td>
         </tr>
@@ -46,26 +63,39 @@
 
         
     </table>
+</div>
+    <br>
+   
 
-    <p>
-         <strong> Связаться со мной</strong>
-    </p>
-<form>
-   <div>
-        <label for="name"> Ваше имя: </label>
-        <input type="text"id="name" placeholder="Введите имя">
-    </div>  
-    <div>
-        <label for="email"> Ваш email: </label>
-        <input type="email"id="email" placeholder="Введите email">
-    </div>
-    <div>
+
+
+<form action="/" class="form">
+    <h4 class="header form">
+        Связаться со мной
+       </h4>
+
+       <div class="form-row">
+        <div class="form-group">
+                <label for="name"> Ваше имя: </label>
+                <input type="text"id="name" placeholder="Введите имя">
+            </div>  
+            <div class="form-group">
+                <label for="email"> Ваш email: </label>
+                <input type="email"id="email" placeholder="Введите email">
+            </div>
+        </div>
+<br>
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>    
+            
         <textarea name="" id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
     </div>
-<button>Отправить</button>
+
+    <button class="btn">Отправить</button>
+
+
 </form>
+
 
 <!-- <input type="submit" value="Вот и форма"> -->
 <!-- <div>
@@ -90,6 +120,6 @@
 
 
 
-
+</div>
 </body>
 </html>

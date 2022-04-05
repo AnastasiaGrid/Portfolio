@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    word-spacing: 0.5px;
+    color: 	#000;
+    background-color: ghostwhite;
+    
+    }
+   img {
+        margin: 10px auto;
+        max-width: 1000px;
+         border-radius: 50%;
+    }
+        
+    .info-text p {
+        font-style: italic;
+           
+    }
+    .info {
+       display: flex;
+       
+    }
+    .card-hobbi {
+        background-color: rgba(204, 216, 216, 0.959); 
+        border: 2px solid silver;
+        margin-bottom: 10px;
+        padding-left: 7px;
+       
+     }
+     
+    
+     .card-hobbi ul{
+        list-style:circle;
+        }
+        
+        .card-hobbi li{
+        padding: 2px; 
+        }
+    .card-work {
+       background-color:  rgba(204, 216, 216, 0.959); 
+       border: 2px solid silver;
+       margin-bottom: 10px;
+       padding-left: 20px;
+    }
+   table {
+       width: 100%;
+   } 
+   .card-work td {
+        padding-bottom: 3px;
+    }
+
+    h4 {
+        margin-bottom: 5px;
+    }
+    .socialmedia ul {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        margin-top: 5px;
+        
+    }
+    .socialmedia li {
+        padding-right: 5px;
+        
+    }
+   
+        
+    
+ .btn {
+     background: #fff;
+     border: 1px solid silver;
+     padding: 5px;
+     cursor: pointer;
+ }
+ .btn:hover {
+    background: rgb(231, 224, 224);
+    text-decoration: dashed;
+    }
+
+    a:visited {
+    color: darkblue;
+    } 
+    a:hover {
+        background: rgba(204, 216, 216, 0.37);
+        
+    }
+    a:active {
+        color: blue; 
+    }
+/* h4 {
+    margin-bottom: 10px;
+    text-align: center;
+} */
+.form-group label{
+    display: block;
+    font-size: 14px;
+    color: rgb(110, 107, 107);
+
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border:1px solid grey;
+    color: #000;
+    outline: none;
+    background: transparent;
+    padding: 15px 0px 10px;
+   border-bottom: 1px solid rgb(146, 143, 143);
+
+}
+
+
+.form-row .form-group{
+    display: inline-block;
+    margin-right: 10px;
+    width: 40%;
+}
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+/* @media (max-width: 650px) {
+    body {
+    font-size: 14px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+   img {
+       width: 150px;
+       height: 150px;
+   }
+}
+.form h4 {
+   margin-top: 0px; 
+} */
+@media (max-width: 559px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+    .socialmedia ul {
+        flex-direction: column;
+    }
